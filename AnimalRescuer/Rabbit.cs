@@ -18,9 +18,13 @@ namespace AnimalRescuer
         {
             Console.WriteLine("The rabbit jump");
         }
-        public void sleep()
+        public override void sleep()
         {
             Console.WriteLine("The rabbit sleeps with eyes open");
+        }
+        public override void speak()
+        {
+            Console.WriteLine("The rabbit speak");
         }
         public string toString()
         {
