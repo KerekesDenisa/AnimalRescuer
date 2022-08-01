@@ -18,9 +18,13 @@ namespace AnimalRescuer
         {
             Console.WriteLine("The rabbit jump");
         }
+        public void sleep()
+        {
+            Console.WriteLine("The rabbit sleeps with eyes open");
+        }
         public string toString()
         {
-            return "isAggressive: " + this.isAggressive;
+            return base.toString() + ", isAggressive: " + this.isAggressive;
         }
     }
 }

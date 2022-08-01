@@ -19,8 +19,13 @@ class App
         Console.WriteLine(vetrinarian.toString());
 
         Rabbit myRabbit = new Rabbit("Puficu", 3, 10, 8, 10, "Puficios", "Sleep", false);
-        Console.WriteLine(myRabbit.Name);
+        Console.WriteLine(myRabbit.toString());
         myRabbit.jump();
+        myRabbit.sleep();
+
+        animal.sleep();
+
+
 
     }
 }

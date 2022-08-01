@@ -35,11 +35,19 @@ namespace AnimalRescuer
         public string NameFood { get => nameFood; set => nameFood = value; }
         public string PreferateRecreationalActivity { get => preferateRecreationalActivity; set => preferateRecreationalActivity = value; }
 
+        public void sleep()
+        {
+            Console.WriteLine("The animals sleep");
+        }
         public string toString()
         {
-            return "Name: " + this.Name + ", Age: " + this.Age + ", Health: " + this.Health + ", Hunger: " +
-                 this.Hunger + ", Happiness: " + this.Happiness + ", Favorite food: " + this.NameFood +
-                 ", Favorite Activity: " + this.PreferateRecreationalActivity;
+            return "Name: " + this.Name + 
+                    ", Age: " + this.Age + 
+                    ", Health: " + this.Health + 
+                    ", Hunger: " + this.Hunger + 
+                    ", Happiness: " + this.Happiness + 
+                    ", Favorite food: " + this.NameFood + 
+                    ", Favorite Activity: " + this.PreferateRecreationalActivity;
         }
     }
 }
