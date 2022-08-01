@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalRescuer
 {
-    internal class Animal
+    internal abstract class Animal
     {
         private string name;
         private int age;
@@ -35,10 +35,9 @@ namespace AnimalRescuer
         public string NameFood { get => nameFood; set => nameFood = value; }
         public string PreferateRecreationalActivity { get => preferateRecreationalActivity; set => preferateRecreationalActivity = value; }
 
-        public void sleep()
-        {
-            Console.WriteLine("The animals sleep");
-        }
+        public abstract void sleep();
+        public abstract void speak();
+
         public string toString()
         {
             return "Name: " + this.Name + 
