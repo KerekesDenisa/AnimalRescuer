@@ -16,5 +16,9 @@ namespace AnimalRescuer
         }
 
         public string Name { get => name; set => name = value; }
+        public string toString()
+        {
+            return "Name: " + this.Name;
+        }
     }
 }

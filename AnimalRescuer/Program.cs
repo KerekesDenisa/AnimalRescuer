@@ -16,7 +16,11 @@ class App
         animal.Name = "jiji";
         Console.WriteLine(animal.Name);
         Console.WriteLine(animal.toString());
-        Console.WriteLine(vetrinarian.ToString());
-        
+        Console.WriteLine(vetrinarian.toString());
+
+        Rabbit myRabbit = new Rabbit("Puficu", 3, 10, 8, 10, "Puficios", "Sleep", false);
+        Console.WriteLine(myRabbit.Name);
+        myRabbit.jump();
+
     }
 }
