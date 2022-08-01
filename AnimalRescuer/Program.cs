@@ -22,6 +22,9 @@ class App
         Console.WriteLine(myRabbit.toString());
         myRabbit.jump();
 
+        myRabbit.sleep();
+
+        animal.sleep();
 
 
 
