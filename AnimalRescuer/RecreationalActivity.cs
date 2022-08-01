@@ -14,5 +14,7 @@ namespace AnimalRescuer
         {
             this.name = name;
         }
+
+        public string Name { get => name; set => name = value; }
     }
 }

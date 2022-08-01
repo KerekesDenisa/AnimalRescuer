@@ -22,5 +22,11 @@ namespace AnimalRescuer
             this.expirationDate = expirationDate;
             this.stock = stock;
         }
+
+        public string Name { get => name; set => name = value; }
+        public float Price { get => price; set => price = value; }
+        public float Quantity { get => quantity; set => quantity = value; }
+        public DateOnly ExpirationDate { get => expirationDate; set => expirationDate = value; }
+        public bool Stock { get => stock; set => stock = value; }
     }
 }

@@ -16,5 +16,10 @@ namespace AnimalRescuer
             this.name = name;
             this.specialization = specialization;
         }
+
+        public string Name { get => name; set => name = value; }
+        public string Specialization { get => specialization; set => specialization = value; }
+
+
     }
 }

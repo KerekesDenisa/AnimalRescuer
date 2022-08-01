@@ -18,5 +18,9 @@ namespace AnimalRescuer
             this.dog = dog;
             this.vetrinarian = vetrinarian;
         }
+
+        public Adoption Adoptation { get => adoptation; set => adoptation = value; }
+        public Animal Dog { get => dog; set => dog = value; }
+        public Vetrinarian Vetrinarian { get => vetrinarian; set => vetrinarian = value; }
     }
 }

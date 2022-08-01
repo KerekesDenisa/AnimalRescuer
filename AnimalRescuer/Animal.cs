@@ -12,17 +12,34 @@ namespace AnimalRescuer
         private int age;
         private int health;
         private int hunger;
+        private int happiness;
         private string nameFood;
         private string preferateRecreationalActivity;
 
-        public Animal(string name, int age, int health, int hunger, string nameFood, string preferateRecreationalActivity)
+        public Animal(string name, int age, int health, int hunger, int happiness, string nameFood, string preferateRecreationalActivity)
         {
             this.name = name;
             this.age = age;
             this.health = health;
             this.hunger = hunger;
+            this.happiness = happiness;
             this.nameFood = nameFood;
             this.preferateRecreationalActivity = preferateRecreationalActivity;
+        }
+
+        public string Name { get => name; set => name = value; }
+        public int Age { get => age; set => age = value; }
+        public int Health { get => health; set => health = value; }
+        public int Hunger { get => hunger; set => hunger = value; }
+        public int Happiness { get => happiness; set => happiness = value; }
+        public string NameFood { get => nameFood; set => nameFood = value; }
+        public string PreferateRecreationalActivity { get => preferateRecreationalActivity; set => preferateRecreationalActivity = value; }
+
+        public string toString()
+        {
+            return "Name: " + this.Name + ", Age: " + this.Age + ", Health: " + this.Health + ", Hunger: " +
+                 this.Hunger + ", Happiness: " + this.Happiness + ", Favorite food: " + this.NameFood +
+                 ", Favorite Activity: " + this.PreferateRecreationalActivity;
         }
     }
 }

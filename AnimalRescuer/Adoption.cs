@@ -16,5 +16,9 @@ namespace AnimalRescuer
             this.name = name;
             this.amountMoney = amountMoney;
         }
+        public string Name { get => name; set => name = value; }
+        public float AmountMoney { get => amountMoney; set => amountMoney = value; }
+
+
     }
 }
