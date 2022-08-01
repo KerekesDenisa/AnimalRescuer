@@ -21,9 +21,7 @@ class App
         Rabbit myRabbit = new Rabbit("Puficu", 3, 10, 8, 10, "Puficios", "Sleep", false);
         Console.WriteLine(myRabbit.toString());
         myRabbit.jump();
-        myRabbit.sleep();
 
-        animal.sleep();
 
 
 
