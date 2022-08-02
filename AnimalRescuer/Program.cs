@@ -4,29 +4,57 @@ class App
 {
     public static void Main(string[] args)
     {
-        //Animal animal = new Animal("Toto", 2, 8, 5, 2,"Happy Dogs", "Play with cats");
-        Adoption adoption = new Adoption("Deni", 1200);
-        AnimalFood animalFood = new AnimalFood("Happy Dogs", 45, 2, new DateOnly(2023,02,05), true);
-        RecreationalActivity recreationalActivity = new RecreationalActivity("Play with cats");
-        Vetrinarian vetrinarian = new Vetrinarian("Pop Elena", "dog");
-        //Play play = new Play(adoption, animal, vetrinarian);
-  
-
-        /*Console.WriteLine(animal.Name);
-        animal.Name = "jiji";
-        Console.WriteLine(animal.Name);
-        Console.WriteLine(animal.toString()); */
-        Console.WriteLine(vetrinarian.toString());
-
-        Rabbit myRabbit = new Rabbit("Puficu", 3, 10, 8, 10, "Puficios", "Sleep", false);
-        Console.WriteLine(myRabbit.toString());
-        myRabbit.jump();
-
-        myRabbit.sleep();
-
-        //animal.sleep();
+        Father father = new Father("Gigi", 45, "blonde", "tall");
 
 
+        Dog dog = new Dog
+            {
+                Age = 1,
+                Weight = 1,
+                isHungry = true,
+                HappinesLevel = HappinessStates.SAD,
+                Name = "",
+                Breed = "Corcitura de labrador",
+                Scared = true
+            };
+
+        Cat cat = new Cat
+        {
+            Age = 1,
+            Weight = 1,
+            isHungry = true,
+            HappinesLevel = HappinessStates.NEUTRAL,
+            Name = "KIKI",
+        };
+
+
+        Duck duck = new Duck
+        {
+            Age = 1,
+            Weight = 1,
+            isHungry = false,
+            HappinesLevel = HappinessStates.HAPPY,
+            Name = "FIFI"
+        };
+
+
+        Girl girl = new Girl("Ana", 7, "roscat", "small", true, dog);
+
+
+       
+        AnimalShelter shelter = new AnimalShelter();
+        shelter.addAnimal(dog);
+        shelter.addAnimal(cat);
+        shelter.addAnimal(duck);
+
+        girl.Adopt(dog);
+        shelter.removeAnimal(dog);
+
+        girl.nameAnimal("Toto");
+
+        DogFood dogFood = new DogFood();
+        girl.feedAnimal(dogFood);
+        dog.HappinesLevel = HappinessStates.HAPPY;
 
     }
 }

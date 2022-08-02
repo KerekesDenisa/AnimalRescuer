@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalRescuer
 {
-    internal abstract class AnimalFood
+    internal class DogFood : AnimalFood
     {
 
     }

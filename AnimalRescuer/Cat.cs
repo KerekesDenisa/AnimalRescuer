@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace AnimalRescuer
 {
-    internal abstract class AnimalFood
+    internal class Cat : Animal
     {
+        public override void Eat(AnimalFood animalFood)
+        {
 
+        }
     }
 }

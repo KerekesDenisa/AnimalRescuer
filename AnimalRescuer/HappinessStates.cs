@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace AnimalRescuer
 {
-    internal abstract class AnimalFood
+    public enum HappinessStates
     {
-
+        SAD,
+        NEUTRAL,
+        HAPPY
     }
 }

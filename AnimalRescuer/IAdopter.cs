@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace AnimalRescuer
 {
-    internal abstract class AnimalFood
+    internal interface IAdopter
     {
+        public abstract void Adopt(Animal animal);
 
     }
 }
